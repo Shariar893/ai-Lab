@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - AI Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Settings</h1>
+                <p>Customize Your AI Lab Experience</p>
+                <a href="index.html" class="back-btn">← Back to Home</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="settings-container">
+                <div class="settings-section">
+                    <h2>Interface Settings</h2>
+                    <div class="setting-group">
+                        <label class="setting-label">
+                            Theme
+                            <select id="themeSelect" class="setting-input">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                                <option value="auto">System Default</option>
+                            </select>
+                        </label>
+
+                        <label class="setting-label">
+                            Font Size
+                            <select id="fontSize" class="setting-input">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </label>
+
+                        <label class="setting-label">
+                            Language
+                            <select id="language" class="setting-input">
+                                <option value="en">English</option>
+                                <option value="bn">Bengali</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2>AI Model Preferences</h2>
+                    <div class="setting-group">
+                        <label class="setting-label">
+                            Default AI Model
+                            <select id="defaultModel" class="setting-input">
+                                <option value="fast">Fast (GPT-3.5)</option>
+                                <option value="balanced">Balanced (GPT-4)</option>
+                                <option value="accurate">Accurate (Claude-2)</option>
+                            </select>
+                        </label>
+
+                        <label class="setting-label">
+                            Response Length
+                            <select id="responseLength" class="setting-input">
+                                <option value="concise">Concise</option>
+                                <option value="balanced" selected>Balanced</option>
+                                <option value="detailed">Detailed</option>
+                            </select>
+                        </label>
+
+                        <div class="setting-toggle">
+                            <span>Auto-Save Conversations</span>
+                            <label class="switch">
+                                <input type="checkbox" id="autoSave" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2>Notification Settings</h2>
+                    <div class="setting-group">
+                        <div class="setting-toggle">
+                            <span>Email Notifications</span>
+                            <label class="switch">
+                                <input type="checkbox" id="emailNotif">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-toggle">
+                            <span>Desktop Notifications</span>
+                            <label class="switch">
+                                <input type="checkbox" id="desktopNotif" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <label class="setting-label">
+                            Email Address
+                            <input type="email" id="emailAddress" class="setting-input" placeholder="Enter your email">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h2>Privacy Settings</h2>
+                    <div class="setting-group">
+                        <div class="setting-toggle">
+                            <span>Share Usage Data</span>
+                            <label class="switch">
+                                <input type="checkbox" id="shareData">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-toggle">
+                            <span>Save Chat History</span>
+                            <label class="switch">
+                                <input type="checkbox" id="saveHistory" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-actions">
+                    <button id="saveSettings" class="primary-btn">Save Changes</button>
+                    <button id="resetSettings" class="secondary-btn">Reset to Default</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 AI Lab Interface. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Features - AI Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Premium Features</h1>
+                <p>Upgrade your AI Lab experience</p>
+                <a href="index.html" class="back-btn">← Back to Home</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="premium-plans">
+                <div class="plan-card">
+                    <h2>Basic Plan</h2>
+                    <div class="price">
+                        <span class="amount">৳499</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Basic AI Models</li>
+                        <li>✓ 5 Projects</li>
+                        <li>✓ Community Support</li>
+                        <li>✓ Standard API Access</li>
+                        <li>× Custom Training</li>
+                    </ul>
+                    <div class="payment-section">
+                        <h3>Pay with bKash</h3>
+                        <div class="bkash-info">
+                            <img src="https://www.logo.wine/a/logo/BKash/BKash-Icon-Logo.wine.svg" alt="bKash Logo" class="bkash-logo">
+                            <div class="payment-steps">
+                                <p>Follow these steps:</p>
+                                <ol>
+                                    <li>Open your bKash app</li>
+                                    <li>Send ৳499 to: <strong>01814678034</strong></li>
+                                    <li>Keep the Transaction ID</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="transaction-form">
+                            <input type="text" id="transactionId1" placeholder="Enter bKash Transaction ID" class="transaction-input">
+                            <input type="text" id="bkashNumber1" placeholder="Your bKash Number" class="transaction-input">
+                            <button class="submit-btn" onclick="submitTransaction('1', 499)">Verify Payment</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <h2>Pro Plan</h2>
+                    <div class="price">
+                        <span class="amount">৳999</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Advanced AI Models</li>
+                        <li>✓ Unlimited Projects</li>
+                        <li>✓ Priority Support</li>
+                        <li>✓ Full API Access</li>
+                        <li>✓ Basic Custom Training</li>
+                    </ul>
+                    <div class="payment-section">
+                        <h3>Pay with bKash</h3>
+                        <div class="bkash-info">
+                            <img src="https://images.app.goo.gl/w7NyqJp3B7a6J7HP8" alt="bKash Logo" class="bkash-logo">
+                            <div class="payment-steps">
+                                <p>Follow these steps:</p>
+                                <ol>
+                                    <li>Open your bKash app</li>
+                                    <li>Send ৳999 to: <strong>01974678034</strong></li>
+                                    <li>Keep the Transaction ID</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="transaction-form">
+                            <input type="text" id="transactionId2" placeholder="Enter bKash Transaction ID" class="transaction-input">
+                            <input type="text" id="bkashNumber2" placeholder="Your bKash Number" class="transaction-input">
+                            <button class="submit-btn" onclick="submitTransaction('2', 999)">Verify Payment</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <h2>Enterprise Plan</h2>
+                    <div class="price">
+                        <span class="amount">৳2499</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features-list">
+                        <li>✓ Enterprise AI Models</li>
+                        <li>✓ Unlimited Projects</li>
+                        <li>✓ 24/7 Dedicated Support</li>
+                        <li>✓ Enterprise API Access</li>
+                        <li>✓ Advanced Custom Training</li>
+                        <li>✓ Custom Model Development</li>
+                    </ul>
+                    <div class="payment-section">
+                        <h3>Pay with bKash</h3>
+                        <div class="bkash-info">
+                            <img src="https://www.logo.wine/a/logo/BKash/BKash-Icon-Logo.wine.svg" alt="bKash Logo" class="bkash-logo">
+                            <div class="payment-steps">
+                                <p>Follow these steps:</p>
+                                <ol>
+                                    <li>Open your bKash app</li>
+                                    <li>Send ৳2499 to: <strong>01814678034</strong></li>
+                                    <li>Keep the Transaction ID</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="transaction-form">
+                            <input type="text" id="transactionId3" placeholder="Enter bKash Transaction ID" class="transaction-input">
+                            <input type="text" id="bkashNumber3" placeholder="Your bKash Number" class="transaction-input">
+                            <button class="submit-btn" onclick="submitTransaction('3', 2499)">Verify Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-benefits">
+                <h2>Premium Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Advanced AI Models</h3>
+                        <p>Access to GPT-4 and other state-of-the-art models</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Custom Training</h3>
+                        <p>Train models on your specific data</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>API Integration</h3>
+                        <p>Full API access for your applications</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Priority Support</h3>
+                        <p>24/7 dedicated technical support</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p> 2025 AI Lab Interface. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/premium.js"></script>
+</body>
+</html>
